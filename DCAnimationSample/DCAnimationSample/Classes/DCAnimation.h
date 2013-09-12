@@ -1,8 +1,8 @@
 //
 //  DCAnimation.h
 //
-//  Created by 廣川政樹 on 2013/05/30.
-//  Copyright (c) 2013年 Dolice. All rights reserved.
+//  Created by Masaki Hirokawa on 2013/05/30.
+//  Copyright (c) 2013 Masaki Hirokawa. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -23,12 +23,12 @@
     BOOL                        _isBound;
 }
 
-#pragma mark property prottype
+#pragma mark - property
 @property (nonatomic, strong) id<DCAnimationDelegate> dc_delegate;
 @property (nonatomic, retain) UIView *targetView;
 @property (nonatomic, assign) BOOL isBound;
 
-#pragma mark method prottype
+#pragma mark - public method
 - (void)fade:(UIView *)view duration:(float)duration isFadeIn:(BOOL)isFadeIn;
 - (void)slide:(UIView *)view duration:(float)duration aimRect:(CGRect)rect;
 - (void)rotate:(UIView *)view duration:(float)duration aimAngle:(float)angle;
@@ -39,7 +39,7 @@
 
 @end
 
+#pragma mark - delegate method
 @protocol DCAnimationDelegate <NSObject>
 @optional
-//- (void)animFinish:(NSString *)anim_id;
 @end
