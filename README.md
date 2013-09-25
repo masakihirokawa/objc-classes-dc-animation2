@@ -14,7 +14,3 @@ DCAnimation
 5. 拡大アニメーション (バウンド機能付き)
 6. 縮小アニメーション
 7. 平行移動アニメーション
-
-##ダウンロード
-
-- <https://github.com/masakihirokawa/objc-classes-dc-animation2>
